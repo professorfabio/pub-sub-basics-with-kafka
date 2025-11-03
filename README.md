@@ -42,3 +42,16 @@ bin/kafka-storage.sh format --standalone -t $KAFKA_CLUSTER_ID -c config/server.p
 ```
 bin/kafka-server-start.sh config/server.properties
 ```
+
+## For the clients:
+
+### Install the Kafka Python client
+
+```
+sudo apt update
+sudo apt install python3-pip
+sudo apt install python3-venv
+python3 -m venv myvenv
+source myvenv/bin/activate
+pip3 install kafka-python
+```
