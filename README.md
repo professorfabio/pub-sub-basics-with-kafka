@@ -17,7 +17,7 @@ sudo apt install default-jdk
 #### Download, install (just uncompress) and configure Apache Kafka. For more detailed instructions, see Kafka's Quickstart page: https://kafka.apache.org/quickstart
   
 ```
-wget https://dlcdn.apache.org/kafka/4.1.0/kafka_2.13-4.2.0.tgz
+wget https://dlcdn.apache.org/kafka/4.2.0/kafka_2.13-4.2.0.tgz
 ```
 ```
 tar -xzf kafka_2.13-4.2.0.tgz
