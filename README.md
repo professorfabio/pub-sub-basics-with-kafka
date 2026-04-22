@@ -30,6 +30,8 @@ cd kafka_2.13-4.2.0/
 
 **Enable remote access to the broker:** Edit the file **config/server.properties** (in the kafka directory) in order to change the line starting with **advertised_listeners**, replacing (only) the first occurrence of **localhost** with the **IP address** of the machine where the Broker will run (server01). It is recommended to use a fixed public IP address for this machine. That line should look like this:
 
+advertised.listeners=PLAINTEXT://32.195.37.234:9092,CONTROLLER://localhost:9093
+
 #### Then create the metadata files with the configuration
 ```
 KAFKA_CLUSTER_ID="$(bin/kafka-storage.sh random-uuid)"
