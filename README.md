@@ -57,3 +57,13 @@ python3 -m venv myvenv
 source myvenv/bin/activate
 pip3 install kafka-python
 ```
+
+### Run the Producer on one machine
+```
+python3 producer <topic_name>
+```
+
+### Run the Client on another machine
+```
+python3 consumer <topic_name>
+```
